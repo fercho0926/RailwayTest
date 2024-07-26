@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./Railway/Dockerfile"
+
+[deploy]
+startCommand = "./Railway/Scylla"
+restartPolicyType = "always"
+healthcheckPath = "/health"
